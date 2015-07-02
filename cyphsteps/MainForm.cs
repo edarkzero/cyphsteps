@@ -31,7 +31,7 @@ namespace cyphsteps
                 progressBar1.Value = 0;
                 tb_salida1.Text = controller.Cypher.convertText(tb_entrada.Text);
                 progressBar1.Value = 50;
-                tb_salida2.Text = controller.Decypher.convertText(tb_entrada.Text);
+                tb_salida2.Text = controller.Decypher.convertText(controller.Cypher.GetBytes());
                 progressBar1.Value = 100;
             }
         }
