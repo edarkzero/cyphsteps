@@ -177,6 +177,7 @@
             this.tb_entrada.Name = "tb_entrada";
             this.tb_entrada.Size = new System.Drawing.Size(682, 142);
             this.tb_entrada.TabIndex = 3;
+            this.tb_entrada.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_entrada_KeyPress);
             // 
             // tb_salida1
             // 
