@@ -12,14 +12,12 @@ namespace cyphsteps.controllers
     {
         private MainForm form;
         private Cypher cypher;
-        private Decypher decypher;
 
         public MainController()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             cypher = new Cypher();
-            decypher = new Decypher();
             form = new MainForm(this);
         }
 
@@ -39,14 +37,6 @@ namespace cyphsteps.controllers
             {
                 return cypher;
             }            
-        }
-
-        public Decypher Decypher
-        {
-            get
-            {
-                return decypher;
-            }
         }
     }
 }
